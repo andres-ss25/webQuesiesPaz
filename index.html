@@ -1,23 +1,120 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Para ti ¿Qué es Paz?</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
 </head>
-
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">Para ti ¿Qué es Paz?</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#interpretacion">Interpretación</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+        </ul>
+    </div>
+</nav>
 
-<div id="container"></div>
+<div class="container mt-4">
+    <h2 class="text-center">Para ti ¿Qué es Paz?</h2>
+    <p class="text-center"><em>Este gráfico es un piloto y un producto derivado del proceso de investigación del Observatorio de Paz y Cultura Ciudadana (2017-2019), abordando la pregunta: <strong>¿Qué sí es Paz?</strong> para Santiago de Cali.</em></p>
 
+    <div class="row">
+        <!-- Sección de Interpretación -->
+        <div class="col-md-4" id="interpretacion">
+            <h3>Cómo interpretar el gráfico</h3>
+            <p>Este gráfico de tipo <strong>Anillos</strong> representa cómo los habitantes de Santiago de Cali participantes de los talleres del Observatorio conceptualizan la Paz, considerando cuatro grandes categorías:</p>
+            <ul>
+                <li><strong>Individual:</strong> La paz vista desde el bienestar personal, la tranquilidad y el entorno familiar.</li>
+                <li><strong>Imaginario:</strong> Conceptos abstractos como la no violencia y los ideales de paz.</li>
+                <li><strong>Colectivo:</strong> Elementos sociales como la educación, el arte y la convivencia.</li>
+                <li><strong>Lugar:</strong> Espacios físicos y territoriales vinculados con la paz.</li>
+            </ul>
+            <p>Al interactuar con el gráfico, puedes explorar estas categorías y sus subcomponentes.</p>
+        </div>
+
+        <!-- Sección del Gráfico -->
+        <div class="col-md-8">
+            <div id="container"></div>
+        </div>
+    </div>
+
+    <!-- Sección del Equipo -->
+    <div class="mt-5" id="equipo">
+        <h3 class="text-center"> Equipo de Investigación</h3>
+        <p>Este trabajo fue realizado por el <strong>Observatorio de Paz y Cultura Ciudadana (2017-2019)</strong>, en conjunto con la <strong>Secretaría de Paz y Cultura Ciudadana</strong>.</p>
+        <div class="row">
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Mauricio Sedano">
+                <p><strong>Mauricio Sedano</strong><br>Coordinador (2017-2019)</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Ana María Galvez">
+                <p><strong>Ana María Galvez</strong><br>Ciencias Políticas</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Juan Manuel Torres">
+                <p><strong>Juan Manuel Torres</strong><br>Sociólogo</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Sergio">
+                <p><strong>Sergio Hernández</strong><br>Sociólogo</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Karol">
+                <p><strong>Karol C. Benítez</strong><br>Normalista</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Andrés Suárez">
+                <p><strong>Andrés F. Suárez</strong><br>Analista de datos</p>
+            </div>
+            <div class="col-md-3 team-member">
+                <img src="./img/default-avata.svg" alt="Equipo Observadores">
+                <p><strong>Equipo Observadores</strong><br>Un maravirrolloso grupo de chic@s talentos@s</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección del Equipo -->
+    <div class="mt-5" id="disclaimer">
+        <h3 class="text-center"> Disclaimer</h3>
+        <p class="text-center">
+            <em>
+                La información proporcionada en esta página tiene fines orientativos y educativos, son una reproducción parcial de datos abiertos y busca ofrecer un piloto de un indicardor para representar el concepto de Paz. 
+                Se recomienda seguir la página oficial de <a href="https://www.cali.gov.co/pazycultura/" target="_blank">Secretaría de Paz y Cultura Ciudadana</a>
+            </em>
+        </p>
+    </div>
+</div>
+
+<!-- Scripts -->
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/sunburst.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
-
-<script src='./javascript/mychart.js' type='text/javascript'></script>
+<script type="module" src="./javascript/mychart.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
-</html> 
-
-
+</html>
